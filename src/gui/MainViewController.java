@@ -43,7 +43,7 @@ public class MainViewController implements Initializable {
 	}	
 
 	@Override
-	public void initialize(URL uri, ResourceBundle rb) {	
+	public void initialize(URL url, ResourceBundle rb) {	
 	}	
 	
 	private synchronized void loadView(String absoluteName) {
@@ -51,7 +51,7 @@ public class MainViewController implements Initializable {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(absoluteName));
 			VBox newVBox = loader.load();
 			
-			Scene mainScene = Main.getMaiScene();
+			Scene mainScene = Main.getMainScene();
 			VBox mainVBox = (VBox) ((ScrollPane) mainScene.getRoot()).getContent();
 			
 			Node mainMenu = mainVBox.getChildren().get(0);
