@@ -57,7 +57,7 @@ public class Seller implements Serializable {
 		return birthDate;
 	}
 
-	public void setBirhDate(Date birthDate) {
+	public void setBirthDate(Date birthDate) {
 		this.birthDate = birthDate;
 	}
 
